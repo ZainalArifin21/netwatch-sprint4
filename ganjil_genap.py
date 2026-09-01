@@ -2,8 +2,16 @@ print("==================================================================")
 print("  PROGRAM MENENTUKAN NILAI ANGKA ADALAH GANJIL ATAU GENAP  ")
 print("==================================================================")
 
-Angka = int(input("Masukkan sebuah Angka: "))
-if Angka % 2 == 0 :
-    print("Angka tersebut adalah Genap")
-else :
-    print("Angka tersebut adalah Ganjil")
+while True:
+    input_angka = input("Masukkan angka (ketik `exit` untuk keluar): )")
+
+    if input_angka.lower() == "exit":
+        print("Program selesai.")
+        break
+
+    angka = int(input_angka)
+
+    if angka % 2 == 0:
+            print("angka tersebut adalah Genap")
+    else:
+            print("angka tersebut adalah Ganjil")

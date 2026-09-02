@@ -1,7 +1,11 @@
-print (" PROGRAM MENGHITUNG LUAS PERSEGI PANJANG ")
-panjang = float(input("Masukkan panjang : "))
-lebar = float(input("Masukkan lebar : "))
+def hitung_luas():
+    print ("PROGRAM MENGHITUNG LUAS PERSEGI PANJANG")
 
-luas = panjang * lebar
+    panjang = float(input("Masukkan panjang : ")) 
+    lebar = float(input("Masukkan lebar : "))
 
-print("luas persegi panjang adalah:", luas)
+    luas = panjang * lebar
+
+    print("luas persegi panjang adalah:", luas)
+    
+hitung_luas() 

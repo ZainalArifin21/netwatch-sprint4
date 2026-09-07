@@ -8,4 +8,3 @@ def hitung_luas():
 
     print("luas persegi panjang adalah:", luas)
     
-hitung_luas() 

@@ -5,6 +5,7 @@
 
 from ganjil_genap import cek_ganjil_genap
 from persegi_panjang import hitung_luas
+from database import login, registrasi
 
 def program_ganjil_genap():
     print("\n======================================")
@@ -22,8 +23,38 @@ def program_ganjil_genap():
 
         cek_ganjil_genap(angka)
 
-    
+def menu_akun():
+    while True:
+        print("\n===========================")
+        print("    MENU AKUN")
+        print("=============================")
+        print("1. Login")
+        print("2. Registrasi")
+        print("3. Keluar")
+        print("=============================")
+
+        pilihan = input("Pilih menu (1/2/3): ")
+
+        if pilihan == "1":
+            if login():
+                return True
+       
+        elif pilihan == "2":
+            registrasi()
+        
+        elif pilihan == "3":
+            print("Program selesai.")
+            return False
+
+        else:
+            print("Pilihan tidak tersedia.")
+
+
 def main():
+    if not menu_akun():
+        return
+
+
     while True:
         print("\n======================================")
         print("   PROGRAM MODULAR SMKN1 NET-WATCH")
